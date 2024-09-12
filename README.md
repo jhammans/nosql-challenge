@@ -48,7 +48,7 @@ cd nosql-challenge
 Before running the notebooks, you must import the data into MongoDB. Use the following command in your terminal to load the data:
 
 ```bash
-mongoimport --db uk_food --collection establishments --file establishments.json --jsonArray
+mongoimport --type json -d uk_food -c establishments --drop --jsonArray establishments.json
 ```
 
 ### Step 3: Installing Dependencies
